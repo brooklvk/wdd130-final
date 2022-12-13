@@ -154,10 +154,17 @@ footer a:hover {
   }
   
   .column img {
-    margin-top: 8px;
     vertical-align: middle;
-    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    width: 90%;
+    border: #96AE6F solid 10px;
   }
+
+.column p {
+    padding: 5px;
+    border: #4E7B93 solid 5px;
+}
 
 
 .description {
@@ -194,6 +201,10 @@ footer a:hover {
 
 .websites {
     display: flex;
+}
+
+.example-img {
+    max-width: 200px;
 }
 
 .website-ind {
@@ -328,7 +339,7 @@ button {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     /* portfolio */
   .column {
     flex: 50%;

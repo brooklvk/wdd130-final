@@ -22,23 +22,13 @@
     </header>
     <main>
         <div id="feedback"></div>
-        <form action="none" method="get">
-            <ul>
-                <li>
-                    <label class="name"><div>Full Name:</div><input type="text" name="full-name" required></label>
-                </li>
-                <li>
-                    <label for="mail">E-mail: </label>
-                    <input type="email" id="mail" name="user_email">
-                </li>
-                <li>
-                    <label for="message">Message: </label>
-                    <textarea name="user_message" id="msg"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Send your message</button>
-                </li>
-            </ul>
+        <form action="scripts/contact-form.js" method="get">
+            <fieldset>
+                <label class="name">Full Name: <input type="text" name="full-name" required></label>
+                <label>E-mail: <input type="email" id="mail" name="user_email" required></label>
+                <label>Message: <textarea name="user_message" id="msg"></textarea></label>
+                <button type="submit">Send your message</button>
+            </fieldset>       
         </form>
     </main>
     <footer>

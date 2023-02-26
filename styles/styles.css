@@ -86,12 +86,15 @@ footer a:hover {
 /*CSS for home page-----------------------*/
 
 .img-examples {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .img-examples img {
-    width: 25%;
     border: 5px solid #4E7B93;
-    padding: 10px;
+    width: 400px;
+    height: auto;
 }
 
 .details {
@@ -297,7 +300,12 @@ button {
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
+    /* home page */
+    .img-examples {
+        flex-direction: row;
+    }
+    
     /* portfolio */
   .column {
     flex: 50%;
@@ -308,7 +316,7 @@ button {
   }
 }
   
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     /* portfolio */
   .column {
     flex: 100%;

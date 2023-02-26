@@ -85,20 +85,6 @@ footer a:hover {
 
 /*CSS for home page-----------------------*/
 
-.main-home {}
-
-.intro-text {
-    border: 5px solid #96AE6F;
-    margin: 20px;
-    text-align: center;
-}
-
-.image-me {
-    width: 250px;
-    height: auto;
-    margin: 20px;
-}
-
 .img-examples {
 }
 
@@ -108,24 +94,13 @@ footer a:hover {
     padding: 10px;
 }
 
-.insp-details {
+.details {
     border: 5px solid #886D84;
-    margin: 20px 20%;
+    margin: 20px 25%;
     text-align: center;
 }
-
-.port-details {
-    border: 5px solid #886D84;
-    margin: 20px 20%;
-    text-align: center;
-}
-
 
 /* CSS for portfolio page------------------*/
-
-.main-portfolio {
-
-}
 
 .row {
     display: flex;
@@ -181,10 +156,6 @@ footer a:hover {
 }
 
 /*CSS for inspiration page----------------*/
-
-.main-inspiration {
-    
-}
 
 .websites {
     display: flex;

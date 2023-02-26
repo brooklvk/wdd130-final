@@ -21,13 +21,12 @@
         </nav>
     </header>
     <main>
-        <div id="feedback"></div>
-        <form action="scripts/contact-form.js" method="get">
+        <form action="thankyou.html" method="get">
             <fieldset>
-                <label class="name">Full Name: <input type="text" name="full-name" required></label>
-                <label>E-mail: <input type="email" id="mail" name="user_email" required></label>
-                <label>Message: <textarea name="user_message" id="msg"></textarea></label>
-                <button type="submit">Send your message</button>
+                <label class="side">Name: <input type="text" name="name" required></label>
+                <label class="side">E-mail: <input type="email" name="email" required></label>
+                <label class="message">Message: <textarea name="message" required></textarea></label>
+                <button class="submit" type="submit">Send your message</button>
             </fieldset>       
         </form>
     </main>
@@ -38,7 +37,7 @@
         <a href="site-plan.html">Site Plan</a>
     </footer>
     </div>
-    <script src="scripts/contact-form.js"></script>
+    <!-- <script src="scripts/contact-form.js"></script> -->
     <script src="scripts/imgloading.js"></script>
 </body>
 </html>

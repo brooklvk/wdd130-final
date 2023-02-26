@@ -88,17 +88,18 @@ footer a:hover {
 .img-examples {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-between;
 }
 
 .img-examples img {
-    border: 5px solid #4E7B93;
-    width: 400px;
+    border: 10px solid #4E7B93;
+    max-width: 400px;
     height: auto;
 }
 
 .details {
-    border: 5px solid #886D84;
+    border: 10px solid #886D84;
     margin: 20px 25%;
     text-align: center;
 }
@@ -113,9 +114,8 @@ footer a:hover {
   
   /* Create four equal columns that sits next to each other */
   .column {
-    flex: 20%;
-    max-width: 25%;
-    padding: 0 4px;
+    flex: 100%;
+    max-width: 100%;
   }
   
   .column img {
@@ -210,30 +210,20 @@ footer a:hover {
 
 /*CSS for contact page---------------- */
 
-.main-contact {
-
-}
-
-
 form {
-    /* Center the form on the page */
     margin: 0 auto;
-    width: 400px;
-    /* Form outline */
-    padding: 1em;
     border: 1px solid #ccc;
-    border-radius: 1em;
-  }
+}
   
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
   
 form li + li {
     margin-top: 1em;
-  }
+}
   
 label {
     /* Uniform size & alignment */
@@ -242,7 +232,7 @@ label {
     text-align: right;
     font: 1em;
     font-family: 'Work Sans', 'sans-serif';
-  }
+}
   
 input, textarea {
     /* To make sure that all text fields have the same font settings
@@ -254,12 +244,12 @@ input, textarea {
   
     /* Match form field borders */
     border: 1px solid #999;
-  }
+}
   
 input:focus, textarea:focus {
     /* Additional highlight for focused elements */
     border-color: #000;
-  }
+}
   
 textarea {
     /* Align multiline text fields with their labels */
@@ -267,19 +257,19 @@ textarea {
   
     /* Provide space to type some text */
     height: 5em;
-  }
+}
   
 .button {
     /* Align buttons with the text fields */
     padding-left: 90px; /* same size as the label elements */
-  }
+}
   
 button {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
     margin-left: 0.5em;
     font-family: 'Work Sans', 'sans-serif';
-  }
+}
 
   #feedback {
     background-color: #B6C1CE;
@@ -292,12 +282,20 @@ button {
     /* make this element invisible until we are ready for it */
     display: none;      
 }
+
 .moveDown {
     margin-top: 3em;
 }
 
 /* media queries */
-
+  
+@media screen and (min-width: 600px) {
+    /* portfolio */
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
 
 
 @media screen and (min-width: 900px) {
@@ -307,19 +305,10 @@ button {
     }
     
     /* portfolio */
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
+    .column {
+        flex: 20%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
 
-  .website-ind {
-  }
-}
-  
-@media screen and (min-width: 600px) {
-    /* portfolio */
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
 }
